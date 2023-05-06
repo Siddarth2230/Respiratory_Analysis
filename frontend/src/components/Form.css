@@ -1,0 +1,37 @@
+.form{
+    align-content: center;
+    padding-top: 10%;
+    padding-bottom: 15%;
+    background-color:rgb(160, 221, 190) ;
+    text-align: center;
+}
+.home1{
+    background-color: rgb(255, 255, 255);
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+.home1 li{
+    display: inline;
+    padding-inline: 100px;
+    padding-left: 15%;
+}
+.home1 ul{
+    display: flex;
+    text-align: center;
+}
+.home1 h3{
+    color: maroon;
+}
+.home2{
+    background-image: url("https://www.narayanahealth.org/blog/wp-content/uploads/2022/09/Lung.jpg");
+    min-height: 83.5vh;
+    background-position: center;
+    display: flex;
+    background-size: cover;
+    max-width: auto;   
+    color: aliceblue;
+}
+.home2 h4{
+    padding-left: 30%;
+    padding-top: 10%;
+}

@@ -1,0 +1,28 @@
+.card {
+    max-width: 500px;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    padding: 10px;
+    padding-top: 10px ;
+    background-color: rgb(255, 127, 127);
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h1 {
+    padding-top: 20px;
+    font-size: 20px;
+    color: #3e0909;
+}
+
+.card p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #330909;
+    line-height: 1.5;
+}
+
