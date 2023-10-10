@@ -83,7 +83,6 @@ def respiratory_rate_prediction_gru(data_x,sampling_rate):
 
     confidence1 = test_pred1.T[test_pred1.mean(axis=0).argmax()].mean()
     confidence2 = test_pred2.T[test_pred2[0].mean(axis=0).argmax()].mean()
-
     return classpreds1,confidence1,classpreds2,confidence2
 
 

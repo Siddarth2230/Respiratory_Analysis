@@ -28,6 +28,10 @@ const AudioPage = () => {
   }, [audio]);
 
   const handleClick = () => {
+    if (!audio) {
+      alert("Audio file is not inserted");
+      return;
+    }
     if (buttonName === "Play") {
       a.play();
       setButtonName("Pause");
@@ -53,7 +57,7 @@ const AudioPage = () => {
     formData.append("file", data);
     var config = {
       method: "post",
-      url: "https://f43c-117-249-249-102.in.ngrok.io/object-to-json",
+      url: "http://127.0.0.1:8000/object-to-json",
       headers: {
         "Content-Type": "multipart/form-data",
       },
@@ -76,13 +80,13 @@ const AudioPage = () => {
     <div>
       <h3>UPLOAD A .WAV FILE!</h3>
       <img src={log} width="350" height="190"  alt="normal rate"></img><br></br><br></br>
-      <input type="file" onChange={onFileChange} />
+      <input className="ip" type="file" onChange={onFileChange} />
       <br></br>
       <br></br>
-      <Button onClick={handleClick}>{buttonName}</Button>
+      <Button className="button" onClick={handleClick}>{buttonName}</Button>
       <br></br>
       <br></br>
-      <Button onClick={detect}>Upload and Predict!</Button>
+      <Button className="button" onClick={detect}>Upload and Predict!</Button>
       <br></br><br></br>
     </div>
     <div>

@@ -37,20 +37,20 @@ const Newuser=()=> {
             <h1>Register</h1>
             <form action="POST">
                 <p>Email: &nbsp;&nbsp;&nbsp;
-                <input type="email" onChange={(e)=>{setEmail(e.target.value)}} placeholder="Enter your Email" name="email" id="email"></input>
+                <input className="ip" type="email" onChange={(e)=>{setEmail(e.target.value)}} placeholder="Enter your Email" name="email" id="email"></input>
                 </p>
                 <p>Username: &nbsp;&nbsp;&nbsp;
-                <input type="email" onChange={(e)=>{setName(e.target.value)}} placeholder="Enter a username" name="name" id="name"></input>
+                <input className="ip" type="email" onChange={(e)=>{setName(e.target.value)}} placeholder="Enter a username" name="name" id="name"></input>
                 </p>
                 <p>
                 Password:&nbsp;&nbsp;&nbsp;
-                <input type="password" onChange={(e)=>{setPassword(e.target.value)}} placeholder="Enter password" name="pass" id="password"></input>
+                <input className="ip" type="password" onChange={(e)=>{setPassword(e.target.value)}} placeholder="Enter password" name="pass" id="password"></input>
                 <br></br></p>
                 <p>
                 Confirm Password:&nbsp;&nbsp;&nbsp;
-				<input type="password" onChange={(e)=>{setcPassword(e.target.value)}} placeholder="Confirm password" name="pass" id="cpassword"></input>
+				<input className="ip" type="password" onChange={(e)=>{setcPassword(e.target.value)}} placeholder="Confirm password" name="pass" id="cpassword"></input>
                 <br></br></p>
-                <input type="submit" onClick={submit}></input>
+                <button className="button" onClick={submit}>Submit</button>
             </form>
             <br></br>
             <p>OR</p>

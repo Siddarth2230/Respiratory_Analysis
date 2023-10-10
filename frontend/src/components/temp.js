@@ -13,7 +13,11 @@ function Temp() {
     </ul>
     </div>
     <div className='home2'>
-      <h4><p>This website allows you to check if you have any lung diseases</p></h4>
+      <h4><p>This website allows you to check if you have any lung diseases. It <br></br> 
+      does this by utilizing artificial intelligence to analyze your breathing <br></br>
+      patterns and compare them against a database of lung diseases. The <br></br> 
+      AI can detect subtle changes in your breathing, which can indicate <br></br>
+      the presence of a lung disease.</p></h4>
     </div>
     </>
   );

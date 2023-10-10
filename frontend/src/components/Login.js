@@ -40,7 +40,7 @@ function Login() {
       <h1>Login</h1>
       <form action="POST">
         Email:&nbsp;&nbsp;&nbsp;
-        <input
+        <input className="ip"
           type="email"
           onChange={(e) => {
             setEmail(e.target.value);
@@ -51,7 +51,7 @@ function Login() {
         /><br></br>
         <br></br>
         Password: &nbsp;&nbsp;
-        <input
+        <input className="ip"
           type="password"
           onChange={(e) => {
             setPassword(e.target.value);
@@ -62,7 +62,8 @@ function Login() {
         />
         <br></br>
         <br></br>
-        <input type="submit" onClick={submit} />
+        <div></div>
+        <button className="button" onClick={submit}>Submit</button>
       </form>
       <br />
       <p>OR</p>
